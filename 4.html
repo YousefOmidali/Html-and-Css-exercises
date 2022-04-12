@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("background.jpg");
+            background-repeat: no-repeat;
+            background-size: 1600px 1000px;
+            background-position: center;
+            background-size: cover;
+            padding: 200px 0;
+            text-align: center;
+
+
+        }
+
+        #main {
+            width: 30%;
+            /* background: #FFFFFF; */
+            padding: 30px;
+            margin: 0 auto;
+            /* From https://css.glass */
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(6.5px);
+            -webkit-backdrop-filter: blur(6.5px);
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            font-size: 20px;
+            /* From https://css.glass */
+            background: rgba(98, 98, 98, 0.25882352941176473);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(7.7px);
+            -webkit-backdrop-filter: blur(7.7px);
+
+            /* From https://css.glass */
+            /*background: rgba(0, 0, 0, 0.18);*/
+            /*box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);*/
+            /*backdrop-filter: blur(6.7px);*/
+            /*-webkit-backdrop-filter: blur(6.7px);*/
+        }
+
+
+        .btn {
+            display: inline !important;
+            padding: 5px 178px;
+            width: fit-content !important;
+            margin-top: 10px;
+            outline: none;
+            size: 10px;
+            background-color: blueviolet;
+            color: #FFFFFF;
+        }
+
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: lightgray;
+            font-size: 15px;
+            opacity: 1; /* Firefox */
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        .btn:hover {
+            background: #ddd;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+<div id="main">
+    <h1 style="color: #FFFFFF ">Login</h1> <br>
+    <form action="">
+        <input type="text" tabindex="1" id="uname" name="uname" minlength="4" required placeholder="username"> <br>
+        <input type="password" tabindex="2" id="password" name="password" required placeholder="password">
+        <input class="btn" type="submit" value="Login"> <br>
+        <p style="color: #FFFFFF;font-size: 15px"> Not a member? <a href="https://google.com"
+                                                           target="_blank" style="color: darkgray; text-decoration: none">Sing Up</a></p>
+    </form>
+</div>
+</body>
+</html>
